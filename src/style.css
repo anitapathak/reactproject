@@ -1,0 +1,38 @@
+*{
+    text-align: center;
+margin: 0;
+background-color: rgb(233, 255, 205);
+}
+h1{
+    background-color: aquamarine;
+    text-align: center;
+    color: black;
+    margin-top: 10%;
+    display: inline-block;
+    border:1rem;
+    padding: 10px 20px;
+}
+button{
+    background-color: antiquewhite;
+   text-align: center;
+    color: black;
+    margin-top: 2%;
+    padding: 10px 20px;
+    
+}
+.container{
+   
+    
+    text-align: center; 
+}
+footer{
+    text-align: center;
+    background-color: antiquewhite;
+    color: black;
+    margin-top: 1%;
+    padding: 10px 20px;
+    display: inline-block;
+    border:3rem;
+    
+
+}

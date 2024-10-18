@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import './style.css'
+import { useState } from 'react'
 
 function App() {
+  let [Counter , setcounter]=useState(15);
+  const addvalue=()=>{
+    //Counter=Counter+1;
+    setcounter(Counter+1);
+  }
+  const removevalue=()=>{
+    //Counter=Counter-1;
+    if (Counter>0){
+    setcounter(Counter-1);
+    }
+    else{
+      alert("can't removes")
+    }
+  }
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+ 
+   <h1>Counter: {Counter}</h1>
+   <div class='container'>
+   <button onClick={addvalue}>ADD VALUE {Counter}</button>
+   <br />
+
+   <button onClick={removevalue}>SUBTRACT VALUE {Counter}</button>
+   
+   <br />
+   <footer >footer:{Counter}</footer>
+   </div>
+
+    </>
   );
 }
 
